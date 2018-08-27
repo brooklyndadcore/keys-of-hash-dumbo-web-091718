@@ -6,8 +6,7 @@ class Hash
          if val == arg
            keys << key 
          end
-      end
-    
+        end
     end
-    return keys
+  return keys
  end
