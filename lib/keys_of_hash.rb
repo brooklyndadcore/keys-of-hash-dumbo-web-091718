@@ -3,9 +3,10 @@ class Hash
     keys = []
      arguments.each do |arg| 
        arg.each |key, val| 
-        keys << key if val == arg 
+         if val == arg
+           keys << key 
+         end
       end
-    
     return keys
     end
  end
