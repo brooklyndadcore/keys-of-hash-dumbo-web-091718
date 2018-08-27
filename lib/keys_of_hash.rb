@@ -1,7 +1,9 @@
 class Hash
   def keys_of(arguments)
     
-    def 
+    arguments.each do |k, v|
+      p k
+    end
     
   end
 end
