@@ -1,8 +1,11 @@
 class Hash
   def keys_of(*arguments)
     keys = []
-     arguments.each { |arg| self.each { |key, val| keys << key if val == arg }
+     arguments.each do |arg| 
+       arg.each |key, val| 
+        keys << key if val == arg 
+      end
     
-    keys
+    return keys
     end
  end
